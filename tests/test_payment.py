@@ -24,7 +24,7 @@ def test_tiendas_validas(db_cursor):
   assert len(payments) == 0, \
   f"Se encontraron pagos asociados a tiendas no válidas: {payments}"
 
-@pytest.mark.id
+@pytest.mark.ir
 def test_pagos_con_alquiler(db_cursor):
   db_cursor.execute("""
   SELECT p.payment_id
